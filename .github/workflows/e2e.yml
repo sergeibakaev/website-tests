@@ -1,9 +1,10 @@
 name: e2e
 on: 
   workflow_dispatch:
-    inputs: 
-      description: 'deployed url'
-      required: true
+    inputs:
+      deployed_url:
+        description: 'deployed url'
+        required: true
 jobs:
   e2e:
     runs-on: ubuntu-latest
